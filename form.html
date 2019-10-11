@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <div class="form-group">
+        <label for="title"> Title </label>
+        <textarea class="form-control" id="title" rows="1"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <textarea class="form-control" id="author" rows="1"></textarea>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <div class="custom-file mb-3">
+            <input type="file" class="custom-file-input" id="customFile" name="file name"></input>
+            <label class="custom-file-label" for="customFile">Choose File</label>
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="selection">Select Where it Will Appear On</label>
+          <select class="form-control" id="selection">
+            <option> Math Academics </option>
+            <option> English Academics </option>
+            <option> History Academics </option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="article">Article Text</label>
+        <textarea class="form-control" id="article" rows="5"></textarea>
+      </div>
+      <div class="form-group form-row">
+        <div class="form-check col-sm-1">
+          <input type="checkbox" class="form-check-input" id="input1"></input>
+          <label for="input1">Python</label>
+        </div>
+        <div class="form-check col-sm-1">
+          <input type="checkbox" class="form-check-input" id="input2"></input>
+          <label for="input2">C++</label>
+        </div>
+        <div class="form-check col-sm-1">
+          <input type="checkbox" class="form-check-input" id="input3"></input>
+          <label for="input3">Java</label>
+        </div>
+        <div class="form-check col-sm-1">
+          <input type="checkbox" class="form-check-input" id="input5"></input>
+          <label for="input4">Scala</label>
+        </div>
+        <div class="form-check col-sm-1">
+          <input type="checkbox" class="form-check-input" id="input5"></input>
+          <label for="input5">Perl</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="selection">Choose Visibility</label>
+        <select class="form-control" id="selection">
+          <option> Public </option>
+          <option> Private </option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>Login to Finish Submitting</label>
+        <div class="form-group col-md-3">
+          <input type="text" class="form-control" placeholder="Username">
+        </div>
+        <div class="form-group col-md-3">
+          <input type="password" class="form-control" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="remember"></input>
+          <label for="remember">Remember Me</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary" data-target="#countries"> Submit </button>
+      </div>
+
+    </form>
+
+  </body>
+</html>
