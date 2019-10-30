@@ -152,7 +152,7 @@ function play() {
 		alert("The game has not started.");
 		return;
 	}
-	var move = document.getElementById("move_text_id").value;
+	var move = document.getElementById("move_text_id").value.toUpperCase();
 	var valid = false;
 	var index = -1;
 	for(i = 0; i < 9; i++) {
@@ -162,7 +162,7 @@ function play() {
 			break;
 		}
 	}
-	document.getElementById("move_text_id").value
+	document.getElementById("move_text_id").value = "";
 	if(!valid || board_state[i] != -1) {
 		alert(move + " is an invalid move choice!");
 		return;
