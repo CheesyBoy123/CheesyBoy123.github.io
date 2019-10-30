@@ -162,6 +162,7 @@ function play() {
 			break;
 		}
 	}
+	document.getElementById("move_text_id").value
 	if(!valid || board_state[i] != -1) {
 		alert(move + " is an invalid move choice!");
 		return;
